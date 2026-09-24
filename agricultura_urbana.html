@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agricultura urbana</title>
+    <link rel="stylesheet" href="agricultura_urbana.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="agricultura_urbana.js" defer></script>
+</head>
+<body>
+    <!--------------------------------------->
+    <!--|estructuracion_agricultura_urbana|-->
+    <!--------------------------------------->
+    <main class="contenedor_agricultura">
+        <header class="encabezado_agricultura">
+            <div class="icono_agricultura">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h1>Agricultura Urbana</h1>
+            <p>Productos frescos cultivados de manera responsable.</p>
+        </header>
+        <!-------------------->
+        <!--|resumen_tienda|-->
+        <!-------------------->
+        <section class="resumen_tienda">
+            <div>
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span>Productos en carrito:</span>
+                <strong id="cantidad_carrito">0</strong>
+            </div>
+            <div>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <span>Total:</span>
+                <strong id="total_carrito">$0.00</strong>
+            </div>
+            <button id="vaciar_carrito" type="button"><i class="fa-solid fa-trash"></i>Vaciar carrito</button>
+        </section>
+        <!------------------------------>
+        <!--|productos_de_agricultura|-->
+        <!------------------------------>
+        <section class="seccion_productos">
+            <div class="titulo_productos">
+                <h2>Productos agrícolas</h2>
+                <p>Elige tus productos favoritos.</p>
+            </div>
+            <div class="contenedor_productos">
+                <article class="tarjeta_producto" data-nombre="Lechuga Hidropónica" data-precio="4.50">
+                    <div class="imagen_producto">
+                        <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=800&q=80" alt="Lechuga fresca">
+                        <button class="boton_favorito" type="button" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="informacion_producto">
+                        <span class="categoria_producto">Hortaliza</span>
+                        <h3>Lechuga Hidropónica</h3>
+                        <p>Lechuga fresca cultivada mediante agricultura urbana.</p>
+                        <div class="pie_producto">
+                            <strong>$4.50</strong>
+                            <button class="boton_carrito" type="button"><i class="fa-solid fa-cart-plus"></i>Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta_producto" data-nombre="Tomates Cherry" data-precio="6.50">
+                    <div class="imagen_producto">
+                        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Tomates cherry">
+                        <button class="boton_favorito" type="button" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="informacion_producto">
+                        <span class="categoria_producto">Fruto</span>
+                        <h3>Tomates Cherry</h3>
+                        <p>Pequeños tomates cultivados en espacios urbanos.</p>
+                        <div class="pie_producto">
+                            <strong>$6.50</strong>
+                            <button class="boton_carrito" type="button"><i class="fa-solid fa-cart-plus"></i>Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tarjeta_producto" data-nombre="Hierbas Aromáticas" data-precio="5.00">
+                    <div class="imagen_producto">
+                        <img src="https://images.unsplash.com/photo-1618375569909-3c8616cf7733?auto=format&fit=crop&w=800&q=80" alt="Hierbas aromáticas">
+                        <button class="boton_favorito" type="button" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="informacion_producto">
+                        <span class="categoria_producto">Aromáticas</span>
+                        <h3>Hierbas Aromáticas</h3>
+                        <p>Selección de hierbas frescas para cocinar en casa.</p>
+                        <div class="pie_producto">
+                            <strong>$5.00</strong>
+                            <button class="boton_carrito" type="button"><i class="fa-solid fa-cart-plus"></i>Agregar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

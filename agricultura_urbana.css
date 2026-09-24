@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0fdf4, #f8fafc);
+    color: #1f2937;
+}
+/*-------------------------------*/
+/*--|estilo_agricultura_urbana|--*/
+/*-------------------------------*/
+.contenedor_agricultura {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 15px 40px rgba(22, 101, 52, 0.10);
+}
+.encabezado_agricultura {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.icono_agricultura {
+    margin-bottom: 10px;
+    color: #16a34a;
+    font-size: 40px;
+}
+.encabezado_agricultura h1 {
+    margin-bottom: 8px;
+    color: #166534;
+    font-size: 34px;
+}
+.encabezado_agricultura p {
+    color: #64748b;
+    font-size: 15px;
+}
+/*---------------------------*/
+/*--|estilo_resumen_tienda|--*/
+/*---------------------------*/
+.resumen_tienda {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 15px 18px;
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+    background: #f0fdf4;
+    color: #166534;
+}
+.resumen_tienda div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.resumen_tienda strong {
+    font-size: 17px;
+}
+.resumen_tienda button {
+    margin-left: auto;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 7px;
+    background: #dc2626;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.resumen_tienda button:hover {
+    background: #b91c1c;
+}
+/*-------------------------------------*/
+/*--|estilo_productos_de_agricultura|--*/
+/*-------------------------------------*/
+.titulo_productos {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.titulo_productos h2 {
+    margin-bottom: 7px;
+    color: #166534;
+    font-size: 25px;
+}
+.titulo_productos p {
+    color: #64748b;
+    font-size: 14px;
+}
+.contenedor_productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.tarjeta_producto {
+    overflow: hidden;
+    border: 1px solid #dcfce7;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta_producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.10);
+}
+.imagen_producto {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.imagen_producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boton_favorito {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #16a34a;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+.boton_favorito.activo {
+    background: #dcfce7;
+    color: #15803d;
+}
+.informacion_producto {
+    padding: 20px;
+}
+.categoria_producto {
+    color: #16a34a;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.informacion_producto h3 {
+    margin: 8px 0;
+    color: #166534;
+    font-size: 20px;
+}
+.informacion_producto p {
+    min-height: 45px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #64748b;
+    font-size: 13px;
+}
+.pie_producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.pie_producto strong {
+    color: #166534;
+    font-size: 20px;
+}
+.boton_carrito {
+    padding: 9px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #16a34a;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.boton_carrito:hover {
+    background: #15803d;
+}
+.boton_carrito.agregado {
+    background: #166534;
+}
